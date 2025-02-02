@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<title>ShopNowUnlimited/gallery</title>
+ <link rel="icon" href="C:\Users\haris\OneDrive\Desktop\saivikas\shopnowunlimited.png" type="img/png">
+
+<style>
+	.bg-img{
+		background-image:url("https://static.vecteezy.com/system/resources/previews/004/299/835/non_2x/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg")
+		}
+		.border{
+			height: 20vh;
+			border-width: 5px;
+			border-style: dotted dashed solid groove;
+			border-color:red;
+			border-radius:50px}
+		nav{
+			background: #333;
+			padding: 15px;
+			position: relative;
+			z-index: 1000;
+			}
+			#menu{
+			list-style:none;
+			padding:0;
+			margin:0;
+			background: #444;
+			width: 200px;
+			position: relative;
+			top:0px;
+			left:20px;
+			display: flex;
+			border-radius: 5px;
+			z-index:1002;
+			}
+		.menu-icon{
+				font-size: 30px;
+				color: white;
+				cursor: pointer;
+				text-align: left;
+				z-index:1001;
+				}
+             #menu li {
+			padding: 10px;
+			text-align: center;
+		}
+ 		#menu li a{
+				text-decoration: none;
+				color: white;
+				display: block;
+			}
+		#menu li:hover{
+				background: #555;
+}
+		#menu.show{
+			display: block;
+}
+	.gallery-title{
+		font-size: 2rem;
+		margin-bottom: 20px;
+		
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	gap: 20px;
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	}
+
+	
+
+.gallery-item{
+	border: 3px solid #333;
+	padding: 10px;
+	background: white;
+	text-align: left;
+	width: 500px;
+	height: 400px;
+	
+}
+
+
+.gallery-item:hover{
+		transform: scale(1.05);
+		}
+.gallery-item img{
+		width:100%;
+		height: 300px;
+		object-fit: cover;
+		display: block;
+		border-bottom: 2px solid #333;
+}
+</style>
+<script defer src="menu.js"></script> <!-- link javascript file -->
+</head>
+
+<body style = "font-family:Copperplate Gothic;margine:0px; background-color:rgb(185, 185, 111)">
+
+<header style ="display:flex; align-item: center; padding:10px 20px; background-color:white">
+
+	<img src="https://cdn.modernghana.com/images/content/11172019112547-typbsferqm-shopnaw.jpg" alt="logo" style="height:50px; margine-right:15px; border-radius:50%;">
+	
+	<h1 style="margine:0; font-size:1.5rem;"> ShopNowUnlimited.com</h1>
+</header>
+ <nav> 
+	<div class="menu-icon" onclick="togglemenu()">
+ 	&#9776; 
+	</div>
+   	<ul id="menu"> 
+		<li> <a href="HOME.html"> Home</a> </li>
+		<li> <a href="GALLERY.html"> Gallery </a> </li>
+		<li> <a href="contact.html"> contact </a> </li>
+	</ul>
+ </nav>
+
+	<h1 class="gallery-title" style="background-color:black;color:whitesmoke">Fashion world</h1>
+
+	<div class="gallery">
+		<div class="gallery-item">
+			<img src="https://m.media-amazon.com/images/I/61Cn-GwBmYL._SY879_.jpg" style="width=500" height="400" border="2px" margin="2px"><br>
+		
+ 	<a class="caption" href="https://www.amazon.in/Leriya-Fashion-Textured-Stylish-XX-Large/dp/B0CLZZ4NXD/?_encoding=UTF8&pd_rd_w=IKVRd&content-id=amzn1.sym.2c27e899-f178-4798-841c-1b75fe8abb18&pf_rd_p=2c27e899-f178-4798-841c-1b75fe8abb18&pf_rd_r=D4H9VMWXJ557VG3PTZZR&pd_rd_wg=Kc4wB&pd_rd_r=0ba72dcf-8987-4246-95fb-af9905498113&ref_=pd_hp_d_atf_dealz_cs" target="_blank">SHODOX Mens Solid Dotted Unique Design <br>Oversized Tshirt for Men - Round Neck Loose<br> Fit Drop Shoulder Mens T-Shirt</a><br><br>
+</div>
+		<div class="gallery">
+		<div class="gallery-item">
+			<img src="https://m.media-amazon.com/images/I/71GoGpdI2NL._SY879_.jpg"  style="width=500" height="400" border="2px" margin="2px"><br>
+		
+ 	<a class="caption" herf="https://www.amazon.in/Lymio-Casual-Shirt-Stylish-D-Crush-16-23/dp/B0CRD6TMKZ/?_encoding=UTF8&pd_rd_w=IKVRd&content-id=amzn1.sym.2c27e899-f178-4798-841c-1b75fe8abb18&pf_rd_p=2c27e899-f178-4798-841c-1b75fe8abb18&pf_rd_r=D4H9VMWXJ557VG3PTZZR&pd_rd_wg=Kc4wB&pd_rd_r=0ba72dcf-8987-4246-95fb-af9905498113&ref_=pd_hp_d_atf_dealz_cs" target="_blank">DEELMO Men's Cotton Blend Mandarin Collar<br> Self One Design Full Sleeve Casual Short Kurta</a><br><br>
+</div><br>
+
+
+
+
+<div class="gallery">
+		<div class="gallery-item">
+			<img src="https://m.media-amazon.com/images/I/51dZ19miAbL._SY741_.jpg" style="width=500" height="400" border="2px" margin="2px"><br><br>
+		
+ 	<a class="caption" href="https://www.amazon.in/GoSriKi-Womens-Embroidered-Straight-Stho-White-Nw2-GS_XL_White_X-Large/dp/B0BVJ1KBFK/ref=sr_1_7?crid=23XXEFE1T329A&dib=eyJ2IjoiMSJ9.qv5ZROBOzFAacPOmcbENYG15cFdWi_66d6WkNoDnSsvyqMrILETWQcmujeJgFAWkNPdwVZXEIIUXCZ8Ss90B-4TBnOVLPu9MjSOxpL0dohqbzJSBop9is0u63wqTW-k3l6QeRfvSj08RD-1i965OO-Vo_CtpdcyNsB_DxmHg47TGGfurTNvysIKctXv0Va4RBfHngRAaW7GsluG7vr5WyA8MgcPAtbzLIS9SmQDk6cjjouObKqCwtcMPGCfN7jjVu1QEwuNLJHipxxKYjzeiaQuSu_WUHkXnEcDFalHcGMgXe3pWke99N-vFhWx1vEQ1KaMNOTCF7q7Mtt19YTwjIddrGZUj9oxPmjenCa18BVXL3WxTspSFLqKzZdK3bAgo7W3x3IT4-UW1tyV0A-HD5uZq26_QoxqrHSGTKHOWuiFupP2_U8SfQwlikyNv60sG.GCG7eR20Ug_IdjvWATGv1O3jaV_WfT8Uf59cWEU4-5Y&dib_tag=se&keywords=womens+fashion&nsdOptOutParam=true&qid=1738432415&sprefix=womens+fas%2Caps%2C239&sr=8-7" target="_blank">GoSriKi Women's Cotton Blend Embroidered <br>Straight Kurta</a><br><br>
+</div>
+
+<div class="gallery">
+		<div class="gallery-item">
+			<img src="https://m.media-amazon.com/images/I/61t5Rq80yeL._SY879_.jpg" style="width=500" height="400" border="2px" margin="2px"><br><br>
+	
+		
+ 	<a class="caption" href="https://www.amazon.in/Enterprise-Banarasi-Kanjivaram-collections-Wedding/dp/B0C1SPQJH1/ref=sr_1_9?crid=23XXEFE1T329A&dib=eyJ2IjoiMSJ9.qv5ZROBOzFAacPOmcbENYG15cFdWi_66d6WkNoDnSsvyqMrILETWQcmujeJgFAWkNPdwVZXEIIUXCZ8Ss90B-4TBnOVLPu9MjSOxpL0dohqbzJSBop9is0u63wqTW-k3l6QeRfvSj08RD-1i965OO-Vo_CtpdcyNsB_DxmHg47TGGfurTNvysIKctXv0Va4RBfHngRAaW7GsluG7vr5WyA8MgcPAtbzLIS9SmQDk6cjjouObKqCwtcMPGCfN7jjVu1QEwuNLJHipxxKYjzeiaQuSu_WUHkXnEcDFalHcGMgXe3pWke99N-vFhWx1vEQ1KaMNOTCF7q7Mtt19YTwjIddrGZUj9oxPmjenCa18BVXL3WxTspSFLqKzZdK3bAgo7W3x3IT4-UW1tyV0A-HD5uZq26_QoxqrHSGTKHOWuiFupP2_U8SfQwlikyNv60sG.GCG7eR20Ug_IdjvWATGv1O3jaV_WfT8Uf59cWEU4-5Y&dib_tag=se&keywords=womens+fashion&nsdOptOutParam=true&qid=1738432415&sprefix=womens+fas%2Caps%2C239&sr=8-9" target="_blank">C J Enterprise Women's Kanjivaram Art<br> Silk SareeSoft Banarasi Style Sari With <br>Blouse Piece For Wedding (Pari122-51)</a><br><br>
+</div>
+
+
+<div class="gallery">
+		<div class="gallery-item">
+			<img src="https://m.media-amazon.com/images/I/515RgSpLs2L._SX679_.jpg" style="width=500" height="400" border="2px" margin="2px"><br><br>
+		
+ 	<a class="caption" href="https://www.amazon.in/Hopscotch-Girls-Half-Sleeve-Solid-Color/dp/B08NW1C9BC/ref=sr_1_1_sspa?crid=18EDUW9X284MW&dib=eyJ2IjoiMSJ9.Bb800jPBYJ3037Ec_ZZ4B6_qa0irr1FzniYfxjODBxvry3-ds5j3xNa-DINZbjXuBZjrjw33PRCk-d5i3Y1eFKTakhwT79ETOL5LxlSMLDmlqid9Gtd59IaDvGwuQniLn0oHGMSKmit6iz9COQx2zx3Ry6hmaEgA_b6dOALnwUKQfFNlWGtAzziu4Rv4qHL-DaKNe6PSXQU-LiDO0-rF8t7a_XO4pR1NpkZu6lf-FPUucqP1LTYY4RGukPhx6HVxC8rnJNaRsLmt7q9CHdzyoJjz0UeJhTyYHLQhuc-Ur_8.nyt7T5eztEfS0Hm6CNk4r-5c7q0cq5LUx-llIeom6u8&dib_tag=se&keywords=kids+wear+for+girls+7-8+years&qid=1738433073&sprefix=kids+wear%2Caps%2C264&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">Hopscotch Girls Maxi Ankle Gown</a><br><br>
+</div>
+
+<div class="gallery">
+	<div class="gallery-item">
+		<img src="https://m.media-amazon.com/images/I/51Mc1B4PL5L._SX569_.jpg" style="width=500" height="400" border="2px" margin="2px"><br> <br>
+	
+ <a class="caption" href="https://www.amazon.in/PINGAKSH-LIFESTYLE-Comfortable-P_B_02221_Green-7-8-Years/dp/B0DFWBPCBS/ref=sr_1_15?crid=VUTHZNY0IZCW&dib=eyJ2IjoiMSJ9.o9IVao9pY2E52YYSvHrL_irO1OcWx9-35FmHToxdF4el-XAAezIrCsWC4cqRqBF1DWoNsYdBX1UOwiN8V40y6lBfyFUQXPD_TOy11O_bpvLF-RG3CxIppWw_nf0yEyaW7k-mRxgpoK3AZvWEakaNCGGt0sVOB2Y5krzzL1yNM75hfK3-qKKMjdgzMi8LIRosptr1iqVXmDbHF_3-AToBgyZ20Ucbwhb55n2Rj51rQQitsy-O1Ye6vWye2gtXZek0Pzeyq_ff1a8QLUeYDBHL_XShO0x8z6dfIVw1OaSEg6gjgDZ3HRlHqG6qJAD52g7yTuBtwXuGkCB8K0eYm-Gkeh9mEklpLTIL3dxzucakXxJndRzfHm9yRHuEzVnkuUhn-HnuOP2k5IxusfRZ6YYuDjgFBhC2XRmyNhHynn2DbjziwsHP3UBKwNizNnYOYxSx.R47gBzvYsHD1y5qBzr0GmzhFHgOMaY2F_QUKWipgtHA&dib_tag=se&keywords=kids+wear+for+boy+7-8+years&qid=1738433420&sprefix=kids+wear+for+boy+7-8+years%2Caps%2C237&sr=8-15" target="_blank">PINGAKSH LIFESTYLE Kid's Boys Cotton<br> Printed Round Neck Long Sleeve Uniqe<br> Design Comfortable Stunning Fancy T-Shirt<br> & Pant (P_B_02283)</a><br>
+ 
+</div>
+
+</body>
+</html>

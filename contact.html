@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ShopNowUnlimited/contact us</title>
+ <link rel="icon" href="C:\Users\haris\OneDrive\Desktop\saivikas\shopnowunlimited.png" type="img/png">
+	<style>
+	.bg-img{
+		background-image:url("https://static.vecteezy.com/system/resources/previews/004/299/835/non_2x/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg")
+		}
+		.border{
+			height: 20vh;
+			border-width: 5px;
+			border-style: dotted dashed solid groove;
+			border-color:red;
+			border-radius:50px}
+		nav{
+			background: #333;
+			padding: 15px;
+			position: relative;
+			z-index: 1000;
+			}
+			#menu{
+			list-style:none;
+			padding:0;
+			margin:0;
+			background: #444;
+			width: 200px;
+			position: relative;
+			top:0px;
+			left:20px;
+			display: flex;
+			border-radius: 5px;
+			z-index:1002;
+			}
+		.menu-icon{
+				font-size: 30px;
+				color: white;
+				cursor: pointer;
+				text-align: left;
+				z-index:1001;
+				}
+             #menu li {
+			padding: 10px;
+			text-align: center;
+		}
+ 		#menu li a{
+				text-decoration: none;
+				color: white;
+				display: block;
+			}
+		#menu li:hover{
+				background: #555;
+}
+		#menu.show{
+			display: block;
+}
+</style>
+<script defer src="script.js"></script> <!-- link javascript file -->
+</head>
+
+<body style = "font-family:Copperplate Gothic;margine:0px; background-color:yellow">
+
+<header style ="display:flex; align-item: center; padding:10px 20px; background-color:white">
+
+	<img src="https://cdn.modernghana.com/images/content/11172019112547-typbsferqm-shopnaw.jpg" alt="logo" style="height:50px; margine-right:15px; border-radius:50%;">
+	
+	<h1 style="margine:0; font-size:1.5rem;"> ShopNowUnlimited.com</h1>
+</header>
+ <nav> 
+	<div class="menu-icon" onclick="togglemenu()">
+ 	&#9776; 
+	</div>
+   	<ul id="menu"> 
+		<li> <a href="HOME.html"> Home</a> </li>
+		<li> <a href="GALLERY.html"> Gallery </a> </li>
+		<li> <a href="contact.html"> contact </a> </li>
+	</ul>
+ </nav>
+ 
+<main style="display:flex; flex-wrap: wrap; padding: 2rem; max-width: 1200px; margin:1200px; margin:auto; gap:2rem;">
+<section style="flex:2; background-color: #43b59e; padding: 2rem; border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0 0 0 0.1);">
+
+<h2> send us a message</h2>
+
+<form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+
+<div>
+	<label for="name" style="display: block; margin-bottom: 0.5rem;font-weight:bold;">Name:</label>
+	<input type="text" id="name" name="name" placeholder="your full name" required
+	style="width:100%;padding:0.5rem;border: 1px solid #ccc; border-radius: 4px;">
+</div>
+<div>
+	<label style="display: block; margin-bottom:0.5rem; font-weight:bold;">gender: </label>
+
+	<input type="radio" id ="male" name="gender" value="male" required>
+	<label for="male" style="margin-right:1rem;">male</label>
+
+	<input type="radio" id ="Female" name="gender" value="Female" required>
+	<label for="Female" style="margin-right:1rem;">Female</label>
+
+
+	<input type="radio" id ="other" name="gender" value="other" required>
+	<label for="other">other</label>
+</div>
+
+<div>
+	<label for="message" style="display:block; margin-bottom: 0.5rem; font-weight: bold;"> message:</label>
+	<textarea id="message" name="message" row="5" placeholder="your message here..." required
+			style="width:100%; padding:0.5rem; border:1px solid #ccc; border-radius: 4px;"></textarea>
+</div>
+
+		<div style="text-align: center;">
+			<button type="submit" style="background-color: blue; color : white; padding: 0.7rem 1.5rem; border:none;
+										border-radius:5px; cursor:pointer;">
+                          submit
+			</button>
+</div>
+
+</form>
+	</section>
+	<aside style="flex:1; background-color: #43b59e; color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba ( 0 0 0 0.1);">
+
+		<h2> our location</h2>
+<address>
+shopnowunlimited.com<br>
+123 festival avenue<br>
+ahmedabad, gujarat, india<br>
+pin:380001
+phone: < a herf="tel:+919002123451"> 90021-23451</a><br>
+email: < a href="malito:shopnow@shopnowunlimited.com"> shopnow@shopnowunlimited.com</a>
+</address>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29533.717819765585!2d73.37410560000001!3d22.288793599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fda2400192473%3A0xc319c9237f2928e8!2sParul%20University!5e0!3m2!1sen!2sin!4v1738399249958!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</aside>
+</main>
+</body>
+</html>
